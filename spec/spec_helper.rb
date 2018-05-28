@@ -1,5 +1,6 @@
 require "bundler/setup"
-require "lab/on/demand"
+require "lab-on-demand"
+require "secrets"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

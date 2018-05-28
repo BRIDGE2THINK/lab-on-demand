@@ -31,7 +31,6 @@ Or install it yourself as:
   base.get("result",{"labInstanceId"=>lab_instance_id})
 
 ```
-TODO: Write usage instructions here
 
 ## Development
 

@@ -1,8 +1,8 @@
-# Lab::On::Demand
+# Lab on Demand API v3.0 - For Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lab/on/demand`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lab_on_demand`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+Based on the [API specification](https://labondemand.com/apidocumentation/v3) for Lab on Demand. Uses [Faraday](https://github.com/lostisland/faraday) as the middleware layer.
 
 ## Installation
 
@@ -22,6 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+  #Create basic connection
+  base = LabOnDemand::ApiV3::Base.new("your-api-key","https://labondemand.com/api/v3/")
+  #Call one of the supported functions:
+  base.catalog
+  #or send a raw call:
+  base.get("result",{"labInstanceId"=>lab_instance_id})
+
+```
 TODO: Write usage instructions here
 
 ## Development
@@ -40,4 +49,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Lab::On::Demand project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/lab-on-demand/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the LabOnDemand project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/lab-on-demand/blob/master/CODE_OF_CONDUCT.md).

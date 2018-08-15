@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sk@bridge2think.com"]
 
   spec.summary       = %q{Integration for the Lab on Demand API version 3.0}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "http://www.bridge2know.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
